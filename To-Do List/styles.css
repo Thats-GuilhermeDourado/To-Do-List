@@ -1,0 +1,202 @@
+/* Estilo global */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background-color: #f5f5f7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.todo-container {
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #333333;
+    margin-bottom: 20px;
+}
+
+/* Estilização do input */
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007aff; /* Azul da Apple */
+    outline: none;
+}
+
+/* Estilo do botão */
+button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background-color: #0051a8;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Lista de tarefas */
+.todo-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.todo-list li {
+    background-color: #f0f0f5;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+}
+
+.todo-list li:hover {
+    background-color: #e0e0e5;
+}
+
+/* Filtro de tarefas */
+.todo-filter {
+    margin: 15px 0;
+}
+
+.todo-filter label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+/* Botão de alternar tema */
+.theme-button {
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.theme-button:hover {
+    background-color: #0051a8;
+}
+
+/* Modal */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+
+/* Estilos para o modo escuro */
+body.dark-theme {
+    background-color: #1c1c1e; /* Cor de fundo escura */
+    color: #ffffff; /* Texto claro */
+}
+
+.dark-theme .todo-container {
+    background-color: #2c2c2e; /* Fundo do container escuro */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme input[type="text"] {
+    background-color: #3a3a3c; /* Fundo do input escuro */
+    color: #ffffff; /* Texto claro */
+    border-color: #5c5c5e; /* Borda do input escura */
+}
+
+.dark-theme button {
+    background-color: #007aff; /* Azul da Apple */
+}
+
+.dark-theme .todo-list li {
+    background-color: #3a3a3c; /* Fundo das tarefas escuras */
+}
+
+.dark-theme .todo-list li:hover {
+    background-color: #4a4a4e; /* Fundo das tarefas ao passar o mouse */
+}
+
+/* Estilo do Container */
+.todo-container {
+    background-color: #ffffff; /* Cor de fundo */
+    border-radius: 15px; /* Bordas arredondadas */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    padding: 20px;
+    margin: 20px; /* Margens generosas */
+}
+
+/* Estilo dos Títulos */
+h1 {
+    font-size: 28px; /* Tamanho maior */
+    color: #444; /* Cor do texto */
+    margin-bottom: 15px;
+}
+
+/* Estilo dos Botões */
+button {
+    background-color: #007aff; /* Cor do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    padding: 10px 15px; /* Padding suave */
+    transition: background-color 0.3s, transform 0.2s; /* Animações */
+}
+
+button:hover {
+    background-color: #0051a8; /* Cor ao passar o mouse */
+    transform: translateY(-1px); /* Efeito de elevação */
+}
+
+/* Estilo das Tarefas */
+.todo-list li {
+    background-color: #f9f9f9; /* Fundo suave */
+    border: 1px solid #e0e0e0; /* Borda sutil */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 15px;
+    margin: 10px 0; /* Espaçamento entre as tarefas */
+}

@@ -45,7 +45,10 @@ The app saves the current list of tasks (including their status and order) to lo
 
 ## Project Structure
 
-├── images # Folder for img
-├── index.html # Main page 
-├── script.js # Application logic
-└── styles.css # Application styling 
+  ├── images # Folder for img
+  
+  ├── index.html # Main page 
+  
+  ├── script.js # Application logic
+  
+  └── styles.css # Application styling 
